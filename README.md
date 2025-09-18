@@ -2,10 +2,6 @@
 
 Simple events API + frontend using Express and SQLite.
 
-## Stack
-- Backend: Node.js, Express, SQLite3, JWT, bcrypt
-- Frontend: Vanilla HTML/CSS/JS
-
 ## Setup
 1. Install dependencies
 ```powershell
@@ -19,7 +15,7 @@ npm run dev
 The server runs at `http://localhost:3000`.
 
 3. Open the frontend
-- Open `index.html` in your browser (double-click or use Live Server).
+- Open `index.html` in your browser (or use Live Server).
 
 ## API Overview
 - Auth
@@ -40,4 +36,5 @@ The server runs at `http://localhost:3000`.
 - Capacity enforced; duplicate registrations prevented.
 - Only creators can modify/delete their events.
 - SQLite database file: `events.sqlite`.
+
 - Configure `JWT_SECRET` via environment variable in production.
