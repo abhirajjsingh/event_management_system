@@ -1,0 +1,60 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Event Management System</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <header>
+        <div>
+            <strong>Event Management System</strong>
+        </div>
+        <div class="status">
+            <span id="authStatus">Not logged in</span>
+            <button id="logoutBtn" class="danger" style="display:none" onclick="logout()">Logout</button>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2> Login/Register </h2>
+                <input type ="email" id="email" placeholder="Enter your email">
+                <input type ="password" id="password" placeholder="Enter your password">
+        <input type ="text" id="name" placeholder="Your name (for registration)">
+        <button onclick="loginUser()">Login</button>
+        <button onclick="registerUser()">Register</button>
+        </section>
+
+        <hr>
+        <section>
+            <h2> Create Event </h2>
+                <input type ="text" id="title" placeholder="Event Name">
+                <input type ="datetime-local" id="date_time">
+                <input type ="text" id="location" placeholder="Event Location">
+                <input type ="number" id="max_capacity" placeholder="Event Capacity">
+                <textarea id="description" placeholder="Event Description"></textarea>
+                <button id="createEventBtn" class="primary" onclick="createNewEvent()">Create Event</button>
+        </section>
+
+        <hr>
+        <section>
+            <h2> My Events (creator actions) </h2>
+            <div id="myEvents"></div>
+        </section>
+
+        <hr>
+        <section>
+            <h2> Upcoming Events </h2>
+            <div id="events"></div>
+        </section>
+
+        <hr>
+        <section>
+            <h2>My Registrations</h2>
+            <div id="myRegistrations"></div>
+        </section>
+    </main>
+    <script src="app.js?v=2"></script>
+
+    </body>
+</html>
